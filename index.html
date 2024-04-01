@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYFL168WNE"></script>
     <script>
@@ -8,16 +13,83 @@
 
     gtag('config', 'G-BYFL168WNE');
     </script>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .project {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hero-image {
+            height: auto;
+            border-radius: 8px;
+        }
+        .newsletter-signup {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .signup-form input[type="email"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .signup-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .signup-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<h1> Projects </h1>
+<body>
 
-<h2>
-    <a href="https://store.steampowered.com/app/2871570/Pixelgroove">Pixelgroove</a>
-</h2>
+<h1>Projects</h1>
 
-<h2> Guess That Color </h2>
-<a href="https://apps.apple.com/us/app/guess-that-color/id6479181014">Apple</a>
-<a href="https://play.google.com/store/apps/details?id=com.jasonify.valuegame&hl=es_MX&gl=US">Android</a>
+<div class="project">
+    <img src="images/pixelgroove.png" alt="Pixelgroove Hero Image" class="hero-image">
+    <h2>
+        <a href="https://store.steampowered.com/app/2871570/Pixelgroove">Pixelgroove on Steam</a>
+    </h2>
+</div>
+
+<div class="project">
+    <img src="images/guess_that_color.png" alt="Guess That Color Hero Image" class="hero-image">
+    <h2>Guess That Color</h2>
+    <a href="https://apps.apple.com/us/app/guess-that-color/id6479181014">Apple</a>
+    <a href="https://play.google.com/store/apps/details?id=com.jasonify.valuegame&hl=es_MX&gl=US">Android</a>
+    <a href="https://github.com/Dream-Dimension/Guess-That-Color">Github</a>
+
+</div>
+
+<div class="newsletter-signup">
+    <h2>Sign Up for the Project Newsletter</h2>
+    <p>Stay updated with our upcoming projects and news.</p>
+    <form action="path_to_your_newsletter_signup_script" class="signup-form">
+        <input type="email" name="email" placeholder="Your email address">
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
 
 
+</body>
+</html>
